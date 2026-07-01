@@ -74,11 +74,12 @@ a { color: inherit; }
 
 .hero { overflow: hidden; background: radial-gradient(circle at top right, var(--color-gold-soft), transparent 34%), linear-gradient(180deg, #f9fcff 0%, var(--color-white) 100%); }
 .hero__grid { display: grid; gap: 2.5rem; align-items: center; }
+.hero__grid > * { min-width: 0; }
 .eyebrow { margin: 0 0 .75rem; color: var(--color-blue-700); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .eyebrow--gold { color: var(--color-gold); }
 h1, h2, h3 { margin: 0; line-height: 1.12; color: var(--color-blue-900); }
 .section--blue h2, .section--blue h3 { color: var(--color-white); }
-h1 { font-size: clamp(2.45rem, 10vw, 5rem); letter-spacing: -.055em; }
+h1 { font-size: clamp(2.45rem, 10vw, 5rem); letter-spacing: -.055em; overflow-wrap: break-word; word-break: break-word; max-width: 100%; }
 h2 { font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: -.04em; }
 h3 { font-size: 1.25rem; }
 .hero__lead, .section__intro p, .cta p { color: var(--color-muted); font-size: 1.08rem; }
